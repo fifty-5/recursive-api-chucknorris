@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  recursive-api-chucknorris:
+    build: .
+    restart: "no"
+    ports:
+      - 3000:3000

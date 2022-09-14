@@ -4,14 +4,13 @@
   "description": "api solo endpoint, devuelve un array de 20 objetos",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
-    "fastify": "^4.5.3",
-    "nodemon": "^2.0.19"
+    "fastify": "^4.5.3"
   }
 }
