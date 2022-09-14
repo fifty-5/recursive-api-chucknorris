@@ -33,3 +33,21 @@ Hardcode de la siguiente información:
 ```
 
 Es para probar la repetición de información, con lo que la posición inicial siempre tendrá el ID: <strong>JSwfO-EASf-uEJiZ0rxf6g</strong>, mientras la posición 1, 2, serán eliminadas.
+
+### Testing
+
+```console
+docker run --network=host --rm skandyla/wrk -c4 -d10s -t2 http://0.0.0.0:3000
+```
+Los resultados son:
+
+```
+Running 10s test @ http://0.0.0.0:3000
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   678.52ms   85.79ms 986.16ms   80.70%
+    Req/Sec     3.75      2.96    10.00     84.62%
+  57 requests in 10.01s, 241.74KB read
+Requests/sec:      5.69
+Transfer/sec:     24.14KB
+```
