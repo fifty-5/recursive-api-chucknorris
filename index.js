@@ -36,7 +36,7 @@ const fillData = async () => {
 
 // Declare a route
 fastify.get("/", async function (_, reply) {
-  // setting inital
+  // setting initial
   arrayData = [];
 
   await fillData();

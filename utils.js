@@ -14,7 +14,9 @@ const push = async (resolve) => {
       value,
       url,
     });
-  } catch (_) {
+  } catch (error) {
+    console.error(error);
+
     // los errores de red se eliminan con un este string
     // al filtrarlos
     return resolve({
