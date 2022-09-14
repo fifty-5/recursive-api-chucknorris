@@ -37,7 +37,23 @@ const fillData = async () => {
 // Declare a route
 fastify.get("/", async function (_, reply) {
   // setting initial
-  arrayData = [];
+  arrayData = [
+    {
+      id: "JSwfO-EASf-uEJiZ0rxf6g",
+      value:
+        'The reason why Japan has too many disasters like the WWII bombings in Hiroshima and Nagasaki, earthquakes and tsunamis is because they always mispronounced his name in their prayers and praises as "CHUCK NOLLIS" instead of CHUCK NORRIS.',
+      url: "https://api.chucknorris.io/jokes/JSwfO-EASf-uEJiZ0rxf6g",
+    },
+    {
+      id: "JSwfO-EASf-uEJiZ0rxf6g",
+      value:
+        'The reason why Japan has too many disasters like the WWII bombings in Hiroshima and Nagasaki, earthquakes and tsunamis is because they always mispronounced his name in their prayers and praises as "CHUCK NOLLIS" instead of CHUCK NORRIS.',
+      url: "https://api.chucknorris.io/jokes/JSwfO-EASf-uEJiZ0rxf6g",
+    },
+    {
+      id: "repeat",
+    },
+  ];
 
   await fillData();
 
